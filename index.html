@@ -104,8 +104,8 @@
         <div class="container featured-grid">
           <article class="feature-project feature-project-large">
             <img
-              src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1400&q=80"
-              alt="Finished custom wood interior showing refined millwork and premium detailing"
+              src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1400&q=80"
+              alt="Finished custom millwork with refined built-in cabinetry and clean architectural detailing"
             />
             <div class="feature-copy">
               <p class="project-type">Residential millwork</p>
@@ -340,14 +340,27 @@
     </footer>
     <script>
       const header = document.querySelector('.site-header');
+      let lastScrollY = window.scrollY;
 
       const updateHeaderState = () => {
         if (!header) return;
-        if (window.scrollY > 24) {
+
+        const currentScrollY = window.scrollY;
+        const scrollingDown = currentScrollY > lastScrollY;
+
+        if (currentScrollY > 24) {
           header.classList.add('header-scrolled');
         } else {
           header.classList.remove('header-scrolled');
         }
+
+        if (currentScrollY > 120 && scrollingDown) {
+          header.classList.add('header-hidden');
+        } else {
+          header.classList.remove('header-hidden');
+        }
+
+        lastScrollY = currentScrollY;
       };
 
       updateHeaderState();
