@@ -338,5 +338,20 @@
         </div>
       </div>
     </footer>
+    <script>
+      const header = document.querySelector('.site-header');
+
+      const updateHeaderState = () => {
+        if (!header) return;
+        if (window.scrollY > 24) {
+          header.classList.add('header-scrolled');
+        } else {
+          header.classList.remove('header-scrolled');
+        }
+      };
+
+      updateHeaderState();
+      window.addEventListener('scroll', updateHeaderState, { passive: true });
+    </script>
   </body>
 </html>
