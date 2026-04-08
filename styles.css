@@ -60,7 +60,7 @@ h3 {
 }
 
 .section-first {
-  padding-top: 4.1rem;
+  padding-top: 8rem;
 }
 
 .section-soft {
@@ -96,20 +96,19 @@ h3 {
   right: 0;
   z-index: 20;
   backdrop-filter: blur(16px);
-  background: linear-gradient(180deg, rgba(12, 11, 10, 0.84) 0%, rgba(20, 18, 16, 0.68) 100%);
+  background: linear-gradient(180deg, rgba(12, 11, 10, 0.86) 0%, rgba(20, 18, 16, 0.72) 100%);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
-  transition: transform 220ms ease, background 220ms ease, box-shadow 220ms ease;
+  transition: background 220ms ease, box-shadow 220ms ease;
 }
 
 .site-header.header-scrolled {
-  transform: translateY(-6px);
-  background: rgba(18, 16, 14, 0.94);
+  background: rgba(18, 16, 14, 0.95);
   box-shadow: 0 14px 34px rgba(0, 0, 0, 0.18);
 }
 
 .nav-wrap {
-  min-height: 84px;
+  min-height: 104px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -118,7 +117,7 @@ h3 {
 }
 
 .site-header.header-scrolled .nav-wrap {
-  min-height: 76px;
+  min-height: 96px;
 }
 
 .brand {
@@ -126,13 +125,13 @@ h3 {
   display: inline-flex;
   align-items: center;
   text-decoration: none;
-  min-width: 160px;
-  margin-right: clamp(3rem, 5vw, 4rem);
+  min-width: 310px;
+  margin-right: clamp(3.5rem, 6vw, 5.5rem);
 }
 
 .brand-logo {
   display: block;
-  width: 160px;
+  width: 310px;
   height: auto;
   object-fit: contain;
   filter: brightness(0) invert(1);
@@ -145,16 +144,16 @@ h3 {
 .site-nav {
   display: flex;
   align-items: center;
-  gap: 1.75rem;
+  gap: 2rem;
   margin-left: auto;
 }
 
 .site-nav a {
   text-decoration: none;
-  color: rgba(247, 243, 237, 0.92);
+  color: rgba(247, 243, 237, 0.88);
   font-weight: 600;
-  font-size: 0.96rem;
-  letter-spacing: 0.04em;
+  font-size: 0.92rem;
+  letter-spacing: 0.05em;
 }
 
 .site-nav a:hover,
@@ -675,27 +674,27 @@ h3 {
   }
 
   .section-first {
-    padding-top: 4rem;
+    padding-top: 6.75rem;
   }
 
   .nav-wrap {
     flex-wrap: wrap;
-    min-height: 72px;
+    min-height: 84px;
     padding: 0.7rem 0;
     gap: 1rem;
   }
 
   .site-header.header-scrolled .nav-wrap {
-    min-height: 68px;
+    min-height: 78px;
   }
 
   .brand {
-    min-width: 130px;
-    margin-right: 1.5rem;
+    min-width: 190px;
+    margin-right: 1.25rem;
   }
 
   .brand-logo {
-    width: 130px;
+    width: 190px;
   }
 
   .footer-logo {
@@ -749,7 +748,7 @@ h3 {
   }
 
   .section-first {
-    padding-top: 3.85rem;
+    padding-top: 6.25rem;
   }
 
   .site-header {
