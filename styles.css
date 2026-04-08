@@ -110,28 +110,23 @@ h3 {
 
 .brand {
   flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
   text-decoration: none;
   min-width: 160px;
   margin-right: clamp(3rem, 5vw, 4rem);
 }
 
-.brand-lockup {
+.brand-logo {
   display: block;
-  width: 160px;
-  font-family: "Manrope", sans-serif;
-  font-size: 1.1rem;
-  font-weight: 800;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  white-space: nowrap;
+  width: 168px;
+  height: auto;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
 }
 
-.brand-lockup-dark {
-  display: none;
-}
-
-.brand-lockup-light {
-  color: #f7f3ed;
+.footer-logo {
+  width: 150px;
 }
 
 .site-nav {
@@ -143,9 +138,14 @@ h3 {
 
 .site-nav a {
   text-decoration: none;
-  color: rgba(247, 243, 237, 0.84);
+  color: rgba(247, 243, 237, 0.9);
   font-weight: 600;
   letter-spacing: 0.02em;
+}
+
+.site-nav a:hover,
+.site-nav a:focus-visible {
+  color: #ffffff;
 }
 
 .button {
@@ -182,9 +182,9 @@ h3 {
   border-radius: 0;
   min-height: 44px;
   padding: 0 1.1rem;
-  background: rgba(247, 243, 237, 0.08);
-  color: #f7f3ed;
-  border-color: rgba(247, 243, 237, 0.22);
+  background: rgba(247, 243, 237, 0.1);
+  color: #fffdf9;
+  border-color: rgba(247, 243, 237, 0.28);
 }
 
 .hero-grid,
@@ -669,10 +669,12 @@ h3 {
     margin-right: 1.5rem;
   }
 
-  .brand-lockup {
-    width: 130px;
-    font-size: 0.94rem;
-    letter-spacing: 0.18em;
+  .brand-logo {
+    width: 140px;
+  }
+
+  .footer-logo {
+    width: 132px;
   }
 
   .site-nav {
